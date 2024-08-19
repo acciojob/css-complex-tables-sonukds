@@ -1,16 +1,104 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Table</title>
+    <style>
+        table {
+            border: 1px solid orange;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid orange;
+            padding: 3px 5px;
+            text-align: center;
+        }
+        th {
+            background-color: #888888;
+            color: white;
+        }
+        .sub-total-text {
+            text-align: right;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<table>
+    <thead>
+        <tr>
+            <th>Firm</th>
+            <th>Org</th>
+            <th>Lob</th>
+            <th>Sub Lob</th>
+            <th>Business Plans</th>
+            <th>Business Components</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="11">XYZ</td>
+            <td rowspan="5">CST</td>
+            <td rowspan="3">CT</td>
+            <td>ADS</td>
+            <td>1</td>
+            <td>10</td>
+        </tr>
+        <!-- Additional rows with sample data -->
+        <tr>
+            <td>ACD</td>
+            <td>2</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>BCD</td>
+            <td>3</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td rowspan="2">MT</td>
+            <td>CDS</td>
+            <td>4</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>EFS</td>
+            <td>5</td>
+            <td>9</td>
+        </tr>
+        <tr class="sub-total-row">
+            <td class="sub-total-text" colspan="3">Sub Total</td>
+            <td>6</td>
+            <td>15</td>
+        </tr>
+        <!-- Additional rows after sub-total -->
+        <tr>
+            <td rowspan="4">OPS</td>
+            <td rowspan="2">PT</td>
+            <td>GHS</td>
+            <td>2</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>KLM</td>
+            <td>3</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td rowspan="2">HR</td>
+            <td>XYZ</td>
+            <td>1</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>DEF</td>
+            <td>4</td>
+            <td>7</td>
+        </tr>
+    </tbody>
+</table>
 
 </body>
-
 </html>
